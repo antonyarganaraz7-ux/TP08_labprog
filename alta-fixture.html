@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cargar partido - Gestión de Fixtures</title>
+    <link rel="stylesheet" href="css/estilos.css">
+  </head>
+  <body>
+    <header>
+      <h1>Sistema de Gestión de Fixtures</h1>
+    </header>
+
+    <nav>
+      <a href="index.html">Inicio</a>
+      <a href="alta-fixture.html">Cargar partido</a>
+      <a href="ver-fixture.html">Ver fixture</a>
+    </nav>
+
+    <main>
+      <section>
+        <h2>Alta de encuentro</h2>
+        <form action="#" method="post">
+
+          <label for="local">Equipo local</label>
+          <select id="local" name="local" required>
+            <option value="">Seleccionar equipo</option>
+            <option value="boca">Boca Juniors</option>
+            <option value="vasco">Vasco da Gama</option>
+            <option value="mineiro">Atlético Mineiro</option>
+            <option value="torque">Montevideo City Torque</option>
+          </select>
+
+          <label for="visitante">Equipo visitante</label>
+          <select id="visitante" name="visitante" required>
+            <option value="">Seleccionar equipo</option>
+            <option value="boca">Boca Juniors</option>
+            <option value="vasco">Vasco da Gama</option>
+            <option value="mineiro">Atlético Mineiro</option>
+            <option value="torque">Montevideo City Torque</option>
+          </select>
+
+          <label for="fecha">Fecha</label>
+          <input type="date" id="fecha" name="fecha" required>
+
+          <label for="hora">Hora</label>
+          <input type="time" id="hora" name="hora" required>
+
+          <label for="sede">Sede / Cancha</label>
+          <select id="sede" name="sede" required>
+            <option value="">Seleccionar cancha</option>
+            <option value="bombonera">La Bombonera (Boca Juniors)</option>
+            <option value="saojanuario">São Januário (Vasco da Gama)</option>
+            <option value="arenamrv">Arena MRV (Atlético Mineiro)</option>
+            <option value="charrua">Estadio Charrúa (Montevideo City Torque)</option>
+          </select>
+
+          <p>Instancia del torneo</p>
+          <input type="radio" id="grupos" name="instancia" value="grupos" required>
+          <label for="grupos">Fase de Grupos</label>
+
+          <input type="radio" id="cuartos" name="instancia" value="cuartos">
+          <label for="cuartos">Cuartos de Final</label>
+
+          <input type="radio" id="semi" name="instancia" value="semi">
+          <label for="semi">Semifinal</label>
+
+          <input type="radio" id="final" name="instancia" value="final">
+          <label for="final">Final</label>
+
+          <p>
+            <button type="submit">Registrar encuentro</button>
+            <button type="reset">Restablecer formulario</button>
+          </p>
+        </form>
+      </section>
+    </main>
+
+    <footer>
+      <p>Talleres para la B <3 </p>
+    </footer>
+  </body>
+</html>

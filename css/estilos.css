@@ -1,0 +1,107 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  background-color: #f2f2f2;
+  color: #222;
+}
+
+header {
+  background-color: #1b4332;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+nav {
+  background-color: #2d6a4f;
+  padding: 10px;
+  text-align: center;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  text-transform: uppercase;
+  margin: 0 15px;
+  cursor: pointer;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+main {
+  padding: 20px;
+  margin: 20px;
+}
+
+article, section {
+  background-color: white;
+  padding: 15px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+}
+
+aside {
+  background-color: #d8f3dc;
+  padding: 15px;
+  margin: 20px;
+  border: 1px solid #95d5b2;
+}
+
+.contenido {
+  display: flex;
+}
+
+.contenido main {
+  flex: 3;
+}
+
+.contenido aside {
+  flex: 1;
+}
+
+label {
+  display: block;
+  margin-top: 12px;
+}
+
+input, select {
+  padding: 6px;
+  margin-top: 4px;
+}
+
+input[type="radio"] {
+  display: inline;
+}
+
+button {
+  padding: 10px 15px;
+  margin: 15px 10px 0 0;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th, td {
+  border: 1px solid #999;
+  padding: 8px;
+  text-align: left;
+}
+
+th {
+  background-color: #2d6a4f;
+  color: white;
+  text-transform: uppercase;
+}
+
+footer {
+  background-color: #1b4332;
+  color: white;
+  text-align: center;
+  padding: 15px;
+}
